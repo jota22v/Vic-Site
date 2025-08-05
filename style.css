@@ -1,0 +1,87 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 10px;
+  padding: o;
+  color: #333;
+  background: url("assets/vic6.jpg") no-repeat center center fixed;
+  background-size: cover; 
+  background-color: #f0f0f0;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #b3007d;
+}
+
+header p {
+  margin: 0.5rem 0;
+  color: #b3007d;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+  color: #f0f0f0;
+  font-size: 24px;
+}
+
+h2 {
+  border-bottom: 2px solid #ffd1d1;
+  padding-bottom: 0.5rem;
+  color: #b3007d;
+}
+
+h2 img {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 50px; 
+}
+
+#motivos {
+  column-count: 2;
+  column-gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+#motivos li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+#motivos li::before {
+  content: "❤️";
+  position: absolute;
+  left: 0;
+  color: #b3007d;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #b3007d;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  #motivos {
+    column-count: 1;
+  }
+  h2 img {
+    width: 40px; 
+  }
+}
